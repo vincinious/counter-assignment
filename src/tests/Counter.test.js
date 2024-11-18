@@ -13,10 +13,6 @@ test('renders Counter component', () =>
   const heading = screen.getByText(/counter/i);
   expect(heading).toBeInTheDocument();
 
-  // // Check if the count value is initialized to 0
-  // const counterValue = screen.getByTestId("count");
-  // expect(counterValue).toHaveTextContent("0");
-
   // Check if the increment '+' and decrement '-' buttons exist
   const incrementButton = screen.getByRole("button", { name: /\+/ });
   const decrementButton = screen.getByRole("button", { name: /-/ });
