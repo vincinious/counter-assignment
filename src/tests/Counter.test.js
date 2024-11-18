@@ -7,7 +7,7 @@ import Counter from "../components/Counter";
 beforeEach(() => 
    { render(<Counter />); });
 
-test('renders Counter component', () => 
+test('renders counter message', () => 
 {
   // Check if the 'counter' text exists as a heading 
   const heading = screen.getByText(/counter/i);
